@@ -1,0 +1,9 @@
+trigger:none
+pool:
+ -steps:
+   - task: AzureCLI@2
+     inputs:
+       azureSubscription: 'Azure subscription free trial(79c26feb-0cf7-4c69-884b-12bcef586d4c)'
+       scriptType: 'ps'
+       scriptLocation: 'inlineScript'
+       inlineScript: 'terraform init'
